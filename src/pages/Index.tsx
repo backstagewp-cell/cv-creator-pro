@@ -38,7 +38,7 @@ const Index = () => {
         <div className="container max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-2 font-semibold text-foreground">
             <FileText className="h-5 w-5 text-primary" />
-            CurriculoJá
+            CurriculoJá.com
           </div>
           <Button onClick={() => navigate("/builder")} size="sm">
             Criar Currículo
