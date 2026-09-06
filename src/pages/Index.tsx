@@ -59,7 +59,7 @@ const Index = () => {
                 pronto para processos seletivos.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
-                <Button variant="hero" size="xl" onClick={() => navigate("/builder")}> 
+                <Button variant="hero" size="xl" onClick={() => navigate("/builder")} className="bg-purple-600 hover:bg-purple-700 text-white">
                   Gerar Currículo <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </div>
@@ -125,7 +125,7 @@ const Index = () => {
         <div className="container max-w-6xl mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold text-foreground mb-4">Pronto para começar?</h2>
           <p className="text-muted-foreground mb-6">Crie seu currículo profissional agora — é rápido e gratuito</p>
-          <Button variant="hero" size="xl" onClick={() => navigate("/builder")}> 
+          <Button variant="hero" size="xl" onClick={() => navigate("/builder")} className="bg-purple-600 hover:bg-purple-700 text-white">
             Gerar Currículo <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
         </div>
