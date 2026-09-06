@@ -38,7 +38,7 @@ const Index = () => {
         <div className="container max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-2 font-semibold text-foreground">
             <FileText className="h-5 w-5 text-primary" />
-            CurriculoPro
+            CurriculoJá
           </div>
           <Button onClick={() => navigate("/builder")} size="sm">
             Criar Currículo
@@ -138,7 +138,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="border-t py-6">
         <div className="container max-w-6xl mx-auto px-4 text-center text-sm text-muted-foreground">
-          © 2026 CurriculoPro. Gerador de currículos profissionais.
+          © 2026 CurriculoJá. Gerador de currículos profissionais.
         </div>
       </footer>
     </div>
