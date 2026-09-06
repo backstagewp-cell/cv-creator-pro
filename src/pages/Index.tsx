@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import { FileText, Zap, Layout, Download, ArrowRight, CheckCircle } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import heroImage from "@/assets/hero-resume.jpg";
@@ -50,6 +51,9 @@ const Index = () => {
         <div className="container max-w-6xl mx-auto px-4 py-20 md:py-28">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
+              <Badge variant="outline" className="mb-4 border-primary/30 text-primary bg-primary/5">
+                Novo tema vermelho
+              </Badge>
               <h1 className="text-4xl md:text-5xl font-bold text-foreground leading-tight mb-4">
                 Seu curriculo{" "}
                 <span className="text-primary uppercase">profissional</span> em poucos instantes.
@@ -73,7 +77,7 @@ const Index = () => {
               <img
                 src={heroImage}
                 alt="Exemplo de currículo profissional"
-                className="rounded-xl shadow-elevated w-full"
+                className="rounded-xl shadow-elevated w-full ring-1 ring-primary/10"
               />
             </div>
           </div>
@@ -89,9 +93,9 @@ const Index = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {features.map((f) => (
-              <div key={f.title} className="p-6 rounded-xl border bg-background shadow-card hover:shadow-card-hover transition-all duration-300 group">
-                <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                  <f.icon className="h-5 w-5 text-primary" />
+              <div key={f.title} className="p-6 rounded-xl border bg-background shadow-card hover:shadow-card-hover hover:border-primary/30 transition-all duration-300 group">
+                <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                  <f.icon className="h-5 w-5 text-primary group-hover:text-primary-foreground transition-colors" />
                 </div>
                 <h3 className="font-semibold text-foreground mb-2">{f.title}</h3>
                 <p className="text-sm text-muted-foreground">{f.description}</p>
@@ -110,8 +114,8 @@ const Index = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {steps.map((s) => (
-              <div key={s.step} className="text-center">
-                <div className="text-4xl font-bold text-primary/20 mb-3">{s.step}</div>
+              <div key={s.step} className="text-center p-6 rounded-xl border bg-card hover:border-primary/30 transition-colors">
+                <div className="text-4xl font-bold text-primary/30 mb-3">{s.step}</div>
                 <h3 className="font-semibold text-foreground mb-2">{s.title}</h3>
                 <p className="text-sm text-muted-foreground">{s.description}</p>
               </div>

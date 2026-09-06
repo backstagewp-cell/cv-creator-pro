@@ -63,7 +63,7 @@ const BuilderContent = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {/* Form */}
           <div className={`${showPreview ? "hidden md:block" : ""}`}>
-            <div className="bg-card border rounded-lg p-6 shadow-card">
+            <div className="bg-card border rounded-lg p-6 shadow-card hover:border-primary/20 transition-colors">
               <StepComponent />
 
               {/* Navigation */}
