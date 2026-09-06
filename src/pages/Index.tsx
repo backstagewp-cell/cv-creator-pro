@@ -51,8 +51,8 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
               <h1 className="text-4xl md:text-5xl font-bold text-foreground leading-tight mb-4">
-                Crie seu currículo{" "}
-                <span className="text-primary">profissional</span> em minutos
+                Seu curriculo{" "}
+                <span className="text-primary uppercase">profissional</span> em poucos instantes.
               </h1>
               <p className="text-lg text-muted-foreground mb-8 max-w-lg">
                 Preencha suas informações, escolha um modelo e baixe seu currículo em PDF —
