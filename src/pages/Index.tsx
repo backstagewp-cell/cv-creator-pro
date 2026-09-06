@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { FileText, Zap, Layout, Download, ArrowRight, CheckCircle } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import heroImage from "@/assets/hero-resume.jpg";
@@ -51,9 +50,6 @@ const Index = () => {
         <div className="container max-w-6xl mx-auto px-4 py-20 md:py-28">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
-              <Badge variant="outline" className="mb-4 border-primary/30 text-primary bg-primary/5">
-                Novo tema vermelho
-              </Badge>
               <h1 className="text-4xl md:text-5xl font-bold text-foreground leading-tight mb-4">
                 Seu curriculo{" "}
                 <span className="text-primary uppercase">profissional</span> em poucos instantes.
